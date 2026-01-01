@@ -10,8 +10,9 @@ class Solution:
             carrier = int(tmp / 10)
 
         if carrier > 0:
-            digits.insert(0, carrier)
+            digits = [0] + digits
         return digits
+
 
 if __name__ == '__main__':
     solu = Solution().plusOne(digits=[9])
